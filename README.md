@@ -1,9 +1,11 @@
 > [!CAUTION]
-> As of this writing (15 June 2026), we are working to finalise the API and self-hosting documentation over the next few days.
->
-> We apologise for the brief delay in open-source releases. We paused after spam waves created safety concerns while we built out Fluxer's trust and safety infrastructure. During that same stretch, we have been fixing hundreds of bugs, adding new features, and preparing a much improved audio and video system.
->
-> You can already try that work in the Fluxer Canary client: [download Canary](https://canary.fluxer.app/download) or [open Canary on the web](https://web.canary.fluxer.app). The latest stable client remains out of date for now, but over the coming weeks we are finalising the remaining work needed to stabilise the current latest code out in the open.
+> This fork only exist to enable usage of the desktop app for our private self hosted instance reachable at https://bnuuy.site/.
+
+# Bnuuy Client
+
+Here you can find our custom client if you want to use the Fluxer desktop app for our bnuuy instance. It contains a few patches to take advantage of our VPS.
+
+# Original README
 
 > [!NOTE]
 > Learn about the developer behind Fluxer, the goals of the project, the tech stack, and what's coming next.
