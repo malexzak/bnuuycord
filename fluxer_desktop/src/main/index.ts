@@ -152,7 +152,7 @@ try {
 }
 
 if (launchConfigurationError) {
-	console.error(`Fluxer desktop launch configuration error: ${launchConfigurationError.message}`);
+	console.error(`Bnuuy Client desktop launch configuration error: ${launchConfigurationError.message}`);
 	log.error('Launch configuration error:', launchConfigurationError);
 	app.exit(1);
 } else if (hasDesktopDebugInfoArg(process.argv)) {
@@ -243,7 +243,7 @@ if (launchConfigurationError) {
 		log.error('[NativeModulePreflight] Fatal native module preflight failure:', error);
 		console.error(message);
 		try {
-			dialog.showErrorBox('Fluxer failed to start', message);
+			dialog.showErrorBox('Bnuuy Client failed to start', message);
 		} catch {}
 		app.exit(1);
 		process.exit(1);

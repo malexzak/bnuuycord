@@ -7,7 +7,7 @@ const os = require('node:os');
 const path = require('node:path');
 const {promisify} = require('node:util');
 const execFileAsync = promisify(execFile);
-const productName = isCanary ? 'Fluxer Canary' : 'Fluxer';
+const productName = isCanary ? 'Bnuuy Client Canary' : 'Bnuuy Client';
 const appId = isCanary ? 'app.fluxer.canary' : 'app.fluxer';
 const iconDir = isCanary ? 'icons-canary' : 'icons-stable';
 const packageName = isCanary ? 'fluxer_desktop_canary' : 'fluxer_desktop';
@@ -319,7 +319,7 @@ const platformRuntimeDependencyExcludes =
 const linuxDesktopEntry = {
 	Name: productName,
 	GenericName: 'Instant Messenger',
-	Comment: isCanary ? 'Canary build of Fluxer' : 'Instant messaging and VoIP',
+		Comment: isCanary ? 'Canary build of Bnuuy Client' : 'Instant messaging and VoIP',
 	Keywords: 'chat;im;messaging;messenger;voip;voice;video;call;',
 	Categories: 'Network;InstantMessaging;Chat;',
 	StartupWMClass: linuxPackageName,
@@ -1051,7 +1051,7 @@ async function verifyLinuxArtifactContracts(buildResult) {
 module.exports = {
 	appId,
 	productName,
-	copyright: 'Copyright © 2026 Fluxer Platform AB',
+	copyright: 'Copyright © 2026 Bnuuy',
 	// biome-ignore lint/suspicious/noTemplateCurlyInString: electron-builder placeholders, not JS template literals.
 	artifactName: '${productName}-${version}-${os}-${arch}.${ext}',
 	directories: {

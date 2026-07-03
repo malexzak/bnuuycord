@@ -2,10 +2,10 @@
 
 function getBootstrapProductName(): string {
 	if (typeof window === 'undefined') {
-		return 'Fluxer';
+		return 'Bnuuy Client';
 	}
 	const productName = window.__FLUXER_BOOTSTRAP__?.instance.app_public?.branding?.product_name?.trim();
-	return productName || 'Fluxer';
+	return productName || 'Bnuuy Client';
 }
 
 export const PRODUCT_NAME = getBootstrapProductName();

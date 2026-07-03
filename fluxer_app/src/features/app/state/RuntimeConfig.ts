@@ -448,7 +448,7 @@ class RuntimeConfig {
 	private buildWellKnownUrl(apiEndpoint: string): string {
 		try {
 			const url = new URL(apiEndpoint);
-			const isOfficialWebApp = url.hostname === 'web.fluxer.app' || url.hostname === 'web.canary.fluxer.app';
+			const isOfficialWebApp = url.hostname === 'bnuuy.site';
 			url.pathname = isOfficialWebApp ? '/api/.well-known/fluxer' : '/.well-known/fluxer';
 			return url.toString();
 		} catch {

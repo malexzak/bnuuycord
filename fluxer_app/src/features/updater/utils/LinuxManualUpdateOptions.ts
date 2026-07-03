@@ -31,8 +31,8 @@ const LINUX_MANUAL_ARCH_TOKENS: Record<LinuxManualDownloadFormat, Record<LinuxDo
 };
 
 const DEFAULT_API_ENDPOINTS: Record<DesktopDownloadChannel, string> = {
-	stable: 'https://api.fluxer.app',
-	canary: 'https://api.canary.fluxer.app',
+	stable: 'https://api.bnuuy.site',
+	canary: 'https://api.canary.bnuuy.site',
 };
 
 interface ParsedLinuxLatestDownloadUrl {

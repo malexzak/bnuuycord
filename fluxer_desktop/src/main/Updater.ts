@@ -71,12 +71,12 @@ function getDesktopDownloadArch(arch: NodeJS.Architecture): DesktopDownloadArch 
 }
 
 const DESKTOP_DOWNLOAD_ARCH = getDesktopDownloadArch(process.arch);
-const UPDATE_API_ENDPOINT = BUILD_CHANNEL === 'canary' ? 'https://api.canary.fluxer.app' : 'https://api.fluxer.app';
+const UPDATE_API_ENDPOINT = BUILD_CHANNEL === 'canary' ? 'https://api.canary.bnuuy.site' : 'https://api.bnuuy.site';
 const UPDATE_VARIANT_SEGMENT =
 	process.platform === 'win32' && DESKTOP_BUILD_VARIANT !== 'default' ? `/${DESKTOP_BUILD_VARIANT}` : '';
 const UPDATE_BASE_URL = `${UPDATE_API_ENDPOINT}/dl/desktop/${BUILD_CHANNEL}/${process.platform}/${DESKTOP_DOWNLOAD_ARCH}${UPDATE_VARIANT_SEGMENT}`;
 const DOWNLOAD_PAGE_URL =
-	BUILD_CHANNEL === 'canary' ? 'https://canary.fluxer.app/download' : 'https://fluxer.app/download';
+	BUILD_CHANNEL === 'canary' ? 'https://canary.bnuuy.site/download' : 'https://bnuuy.site/download';
 
 let lastContext: UpdaterContext = 'background';
 let pendingVelopackUpdate: UpdateInfo | null = null;
@@ -477,7 +477,7 @@ function buildManualLatestDownloadUrl(format: ManualDesktopFormat): string {
 }
 
 function getModernProductName(): string {
-	return BUILD_CHANNEL === 'canary' ? 'Fluxer Canary' : 'Fluxer';
+	return BUILD_CHANNEL === 'canary' ? 'Bnuuy Client Canary' : 'Bnuuy Client';
 }
 
 function getManualUpdateSuggestedName(format: LinuxManualDesktopFormat, version: string): string {
