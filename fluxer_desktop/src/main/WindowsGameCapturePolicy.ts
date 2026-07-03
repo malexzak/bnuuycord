@@ -7,7 +7,9 @@ export const WINDOWS_GAME_CAPTURE_DISABLED_DETAIL = 'windows-game-capture-disabl
 export const WINDOWS_GAME_CAPTURE_DISABLED_REASON = 'disabled-by-launch';
 
 export const WINDOWS_GAME_CAPTURE_MODULE_ENABLED =
-	IS_WINDOWS_GAME_CAPTURE_BUILD || process.env.FLUXER_WINDOWS_GAME_CAPTURE_MODULE_ENABLED === 'true';
+	IS_WINDOWS_GAME_CAPTURE_BUILD ||
+	process.env.FLUXER_WINDOWS_GAME_CAPTURE_MODULE_ENABLED === 'true' ||
+	process.platform === 'win32';
 
 export function enableWindowsGameCaptureModuleForCurrentProcess(): void {
 	if (!WINDOWS_GAME_CAPTURE_MODULE_ENABLED) return;

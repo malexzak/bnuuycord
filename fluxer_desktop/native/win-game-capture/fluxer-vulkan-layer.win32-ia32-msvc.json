@@ -1,0 +1,14 @@
+{
+	"file_format_version": "1.2.0",
+	"layer": {
+		"name": "VK_LAYER_FLUXER_game_capture",
+		"type": "GLOBAL",
+		"library_path": ".\\\\fluxer-vulkan-layer.win32-ia32-msvc.dll",
+		"api_version": "1.0.0",
+		"implementation_version": "1",
+		"description": "Fluxer Vulkan game capture layer",
+		"disable_environment": {
+			"DISABLE_FLUXER_VULKAN_CAPTURE": ""
+		}
+	}
+}
